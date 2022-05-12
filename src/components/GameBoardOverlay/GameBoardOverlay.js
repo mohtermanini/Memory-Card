@@ -12,6 +12,7 @@ export default function GameBoardOverlay(props) {
             {(props.status === "loading" || props.status==="running") && (
                 <div className="overlay-content loading-overlay">
                     <div className="spinner"></div>
+                    <p>Loading Images {"("}{props.loadedImages}/{props.cardsCount}{")"}</p>
                 </div>
             )}
             {props.status === "lose" && (

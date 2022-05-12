@@ -123,6 +123,8 @@ export default function GameBoard(props) {
                         status={status}
                         score={score}
                         time={time}
+                        cardsCount={props.cardsCount}
+                        loadedImages={loadedImages}
                         startNewGame={props.startNewGame}
                     />
                 </CSSTransition>

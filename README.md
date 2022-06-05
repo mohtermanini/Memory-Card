@@ -8,6 +8,7 @@ You are presented with multiple images. The images get shuffled every-time they 
 
 ## Technical section
 * Languages:
+    * HTML
     * CSS
     * Javascript
     * React

@@ -1,0 +1,49 @@
+@use "sass:list";
+
+@for $i from 1 through 8 {
+  $margins: 3px, 5px, 8px, 10px, 15px, 20px, 25px, 30px;;
+  .h-mt-#{$i} {
+    margin-top: list.nth($margins, $i);
+  }
+  .h-mb-#{$i} {
+    margin-bottom: list.nth($margins, $i);
+  }
+  .h-ml-#{$i} {
+    margin-left: list.nth($margins, $i);
+  }
+  .h-mr-#{$i} {
+    margin-right: list.nth($margins, $i);
+  }
+  .h-my-#{$i} {
+    @extend .h-mt-#{$i};
+    @extend .h-mb-#{$i};
+  }
+  .h-mx-#{$i} {
+    @extend .h-ml-#{$i};
+    @extend .h-mr-#{$i};
+  }
+}
+
+@for $i from 1 through 8 {
+  $paddings: 3px, 5px, 8px, 10px, 15px, 20px, 25px, 30px;
+  .h-pt-#{$i} {
+    padding-top: list.nth($paddings, $i);
+  }
+  .h-pb-#{$i} {
+    padding-bottom: list.nth($paddings, $i);
+  }
+  .h-pl-#{$i} {
+    padding-left: list.nth($paddings, $i);
+  }
+  .h-pr-#{$i} {
+    padding-right: list.nth($paddings, $i);
+  }
+  .h-py-#{$i} {
+    @extend .h-pt-#{$i};
+    @extend .h-pb-#{$i};
+  }
+  .h-px-#{$i} {
+    @extend .h-pl-#{$i};
+    @extend .h-pr-#{$i};
+  }
+}

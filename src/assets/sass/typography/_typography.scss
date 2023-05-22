@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "ChunkFive";
+  src: url("../fonts/ChunkFive-Regular.otf");
+}
+
+@font-face {
+  font-family: "Action_Man";
+  src: url("../fonts/Action_Man.ttf");
+}
+@font-face {
+  font-family: "Action_Man_Bold";
+  src: url("../fonts/Action_Man_Bold.ttf");
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-size: 1.4rem;
+  font-family: "Action_Man", "Arial", sans-serif;
+  line-height: 1.6;
+  letter-spacing: 0.1rem;
+}
+
+h1,
+h2 {
+  font-family: "Action_Man_Bold", inherit;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 1.5em;
+}

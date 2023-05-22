@@ -1,0 +1,31 @@
+button {
+  border: none;
+  color: #fff;
+  padding: 1rem 2rem;
+  background-color: var(--cyan);
+  transition: all 0.5s;
+  font-family: inherit;
+  letter-spacing: inherit;
+}
+
+button:hover {
+  background-color: var(--cyan-hover);
+  letter-spacing: 0.2rem;
+  outline: 1px solid #fff;
+}
+
+.btn-danger {
+  background-color: var(--danger);
+}
+
+.btn-danger:hover {
+  background-color: var(--danger-hover);
+}
+
+.btn-success {
+  background-color: var(--success);
+}
+
+.btn-success:hover {
+  background-color: var(--hover-success);
+}

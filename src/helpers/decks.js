@@ -8,8 +8,8 @@ const Decks = (() => {
     const DECKS_INNER_NAMES = ["monsters_inc", "pokemon", "digimon"];
 
     const CARDS_NUMBER = {
-      monsters_inc: 20,
-      pokemon: 20,
+      monsters_inc: 30,
+      pokemon: 30,
       digimon: 30
     };
 

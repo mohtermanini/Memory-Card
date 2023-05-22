@@ -18,17 +18,15 @@ export default function useGameCards(activeGame, gameOptions) {
   }, []);
 
   useEffect(() => {
-    if (activeGame.startNewRound) {
+    if (activeGame.status === GAME_STATUS.NEW_GAME) {
       let numOfCards = getCurrentRoundNumOfCards();
       const allCards = getAllDecksCards();
       const newCards = getRandomCardsFromCardsArray(allCards, numOfCards);
       setGameCards(newCards);
     }
   }, [
-    activeGame.startNewRound,
-    gameOptions.gameType,
-    activeGame.level,
-    gameOptions.freePlayNumberOfCards,
+    activeGame.status,
+    gameOptions
   ]);
 
   function getCurrentRoundNumOfCards() {

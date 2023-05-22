@@ -1,0 +1,91 @@
+.game-options {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.modal-body .option-title {
+  background-color: var(--low-dark-blue);
+  padding: 0.5rem 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #fff;
+  font-size: 1.8rem;
+}
+
+.modal-body .option-title-sm {
+  font-size: inherit;
+  font-weight: normal;
+}
+
+.modal-body .separator {
+  height: 2px;
+  width: 100%;
+  border: none;
+}
+
+.modal-body .game-type {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 5rem;
+  row-gap: 2rem;
+  justify-content: center;
+}
+
+.radio-button label {
+  background-color: var(--mid-dark-blue);
+  padding: 1rem 2rem;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.5s, letter-spacing 0.5s;
+}
+
+.radio-button input:not(:checked) + label:hover {
+  background-color: var(--mid-dark-blue-hover);
+  letter-spacing: 0.2rem;
+  outline: 1px solid #fff;
+}
+
+.radio-button input {
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: #fff;
+}
+
+.radio-button input:checked + label {
+  outline: 3px solid #fff;
+}
+
+.modal-body .game-type .radio-button label {
+  width: 150px;
+}
+
+.modal-body .game-type .radio-button input:checked + label {
+  position: relative;
+}
+
+.modal-body .game-type .radio-button input:checked + label::before {
+  content: "";
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../../../assets/images/styling/hand-click.svg");
+  background-size: contain;
+  background-position: center;
+  position: absolute;
+  bottom: -15px;
+  left: -20px;
+}
+
+.modal-body .decks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-body .decks label {
+  width: 160px;
+}

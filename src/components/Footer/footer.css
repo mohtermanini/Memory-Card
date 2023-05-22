@@ -1,0 +1,18 @@
+.app-footer {
+    padding: 1rem 0;
+    margin-top: 3rem;
+    background-color: var(--cyan);
+    color: #fff;
+    text-align: center;
+}
+
+.app-footer .author {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.app-footer .author .bi-github{
+    margin-top: 1rem;
+}

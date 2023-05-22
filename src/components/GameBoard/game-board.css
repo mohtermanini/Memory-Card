@@ -1,0 +1,39 @@
+.board {
+  padding: 1rem 2rem;
+  width: 75vw;
+  background-color: var(--dark-blue);
+  position: relative;
+}
+
+.board-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 1rem 0;
+}
+
+.board-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.board-details .col-right {
+  display: flex;
+  gap: 1rem;
+}
+
+.time {
+  display: inline-block;
+  min-width: 50px;
+}
+
+.board-fade-exit {
+  opacity: 1;
+}
+.board-fade-exit-active {
+  opacity: 0;
+  transition: opacity 200ms ease-out;
+}

@@ -21,10 +21,7 @@ export default function GameCard({
   const cardContainerRef = useRef();
 
   useEffect(() => {
-    const path = `../../assets/images/decks/${card}`;
-    import(path).then((image) => {
-      setFrontSideImgSrc(image.default);
-    });
+    setFrontSideImgSrc(`/images/decks/${card}`);
   }, [card]);
 
   useEffect(() => {

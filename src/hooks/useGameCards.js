@@ -12,7 +12,7 @@ export default function useGameCards(activeGame, gameOptions) {
   const [backSideOfCards, setBackSideOfCards] = useState(null);
 
   useEffect(() => {
-    import(`../assets/images/decks/cards_backs/01.png`).then((image) => {
+    import(`/images/decks/cards_backs/01.png`).then((image) => {
       setBackSideOfCards(image.default);
     });
   }, []);

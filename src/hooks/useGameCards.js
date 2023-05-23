@@ -12,9 +12,9 @@ export default function useGameCards(activeGame, gameOptions) {
   const [backSideOfCards, setBackSideOfCards] = useState(null);
 
   useEffect(() => {
-    import(`/images/decks/cards_backs/01.png`).then((image) => {
-      setBackSideOfCards(image.default);
-    });
+    const imgUrl = new URL("/images/decks/cards_backs/01.png", import.meta.url)
+      .href;
+    setBackSideOfCards(imgUrl);
   }, []);
 
   useEffect(() => {
@@ -24,10 +24,7 @@ export default function useGameCards(activeGame, gameOptions) {
       const newCards = getRandomCardsFromCardsArray(allCards, numOfCards);
       setGameCards(newCards);
     }
-  }, [
-    activeGame.status,
-    gameOptions
-  ]);
+  }, [activeGame.status, gameOptions]);
 
   function getCurrentRoundNumOfCards() {
     if (gameOptions.gameType === GAME_TYPES.LEVELS) {
